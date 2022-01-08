@@ -1,4 +1,5 @@
 import React from "react";
+import SocialIcons from "./SocialIcons";
 import { Container } from "./styles/Container.styled";
 import { Flex } from "./styles/Flex.styled";
 import { StyledFooter } from "./styles/Footer.styled";
@@ -28,6 +29,8 @@ const Footer = () => {
             <li>Blog</li>
             <li>Contact Us</li>
           </ul>
+
+          <SocialIcons />
         </Flex>
         <p>&copy; 2022 Huddle. All rights reserved</p>
       </Container>
