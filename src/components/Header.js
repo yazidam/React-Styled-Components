@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledHeader, Nav, Logo, Image } from "./styles/Header.styled";
 import { Container } from "../components/styles/Container.styled";
 import { Button } from "./styles/Button.styled";
 import { Flex } from "./styles/Flex.styled";
+import CardInfo from "./CardInfo";
+
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const hundelSubmit = () => {
+    setShow((prev) => !prev);
+  };
   return (
     <StyledHeader>
       <Container>
         <Nav>
           <Logo src="./images/logo.svg" alt="logo" />
-          <Button>Try It Free</Button>
+          <Button onClick={hundelSubmit}>Try It Free</Button>
         </Nav>
         <Flex>
           <div>
@@ -25,6 +32,7 @@ const Header = () => {
           </div>
           <Image src="./images/illustration-mockups.svg" alt="" />
         </Flex>
+        {show ? <CardInfo setShow={setShow} /> : ""}
       </Container>
     </StyledHeader>
   );
