@@ -1,8 +1,9 @@
 import React from "react";
+import { StyledCard } from "./styles/Card.styled";
 
 const Card = ({ item }) => {
   return (
-    <div>
+    <StyledCard>
       <div>
         <h2>{item.title}</h2>
         <p>{item.body}</p>
@@ -10,7 +11,7 @@ const Card = ({ item }) => {
       <div>
         <img src={`./images/${item.image}`} alt="image" />
       </div>
-    </div>
+    </StyledCard>
   );
 };
 
