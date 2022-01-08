@@ -9,13 +9,13 @@ function App() {
       body: "#fff",
       footer: "#003333",
     },
+    mobile: "768px",
   };
   return (
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
         <Header />
-        <Container></Container>
       </>
     </ThemeProvider>
   );
