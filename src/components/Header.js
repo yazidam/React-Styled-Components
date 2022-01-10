@@ -24,9 +24,9 @@ const Header = () => {
               <Typical
                 steps={[
                   "Build The Community Your Fans Will Love",
-                  1000,
+                  3000,
                   "Build Your First online Community!",
-                  1000,
+                  2000,
                 ]}
                 loop={Infinity}
                 wrapper="p"
