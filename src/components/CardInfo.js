@@ -15,9 +15,9 @@ const CardInfo = ({ setShow, show }) => {
   }, [hideModal]);
   return (
     <StyledModal>
-      <div className="modal-box">
-        <h3>Ahmed Yazid Mejri 5 TWIN 1</h3>
-        <Button onClick={() => setShow(!show)}>Close</Button>
+      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+        <h3>Ahmed Yazid Mejri 🔥🔥</h3>
+        <Button onClick={() => setShow((prev) => !prev)}>Close</Button>
       </div>
     </StyledModal>
   );
