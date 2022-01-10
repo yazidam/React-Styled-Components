@@ -16,7 +16,7 @@ const CardInfo = ({ setShow, show }) => {
   return (
     <StyledModal>
       <div className="modal-box">
-        <h3>Ahmed Yazid Mejri</h3>
+        <h3>Ahmed Yazid Mejri 5 TWIN 1</h3>
         <Button onClick={() => setShow(!show)}>Close</Button>
       </div>
     </StyledModal>
