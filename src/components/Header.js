@@ -42,7 +42,11 @@ const Header = () => {
               Get Started For Free
             </Button>
           </div>
-          <Image src="./images/illustration-mockups.svg" alt="" />
+          <Image
+            src="./images/illustration-mockups.svg"
+            alt=""
+            data-aos="fade-left"
+          />
         </Flex>
         {show ? <CardInfo setShow={setShow} /> : ""}
       </Container>

@@ -42,7 +42,9 @@ const Footer = () => {
             <FaArrowCircleUp />
           </a>
         </UpIcon>
-        <p>&copy; 2022 Huddle. All rights reserved</p>
+        <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          &copy; 2022 Huddle. All rights reserved
+        </p>
       </Container>
     </StyledFooter>
   );
