@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import AOS from "aos";
 import FirstPage from "./FirstPage";
+import SecondePage from "./SecondePage";
 
 function App() {
   const theme = {
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<FirstPage theme={theme} />} />
+        <Route path="/seconde" element={<SecondePage theme={theme} />} />
       </Routes>
     </BrowserRouter>
   );

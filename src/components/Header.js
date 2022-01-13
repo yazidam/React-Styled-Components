@@ -5,9 +5,10 @@ import { Button } from "./styles/Button.styled";
 import { Flex } from "./styles/Flex.styled";
 import CardInfo from "./CardInfo";
 import Typical from "react-typical";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const [show, setShow] = useState(false);
-
+  const navigate = useNavigate();
   const hundelSubmit = () => {
     setShow((prev) => !prev);
   };
@@ -38,7 +39,11 @@ const Header = () => {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-            <Button bg="#ff0099" color="#fff">
+            <Button
+              onClick={() => navigate("/seconde")}
+              bg="#ff0099"
+              color="#fff"
+            >
               Get Started For Free
             </Button>
           </div>
