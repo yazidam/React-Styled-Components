@@ -4,7 +4,7 @@ import { Container } from "../components/styles/Container.styled";
 import { Button } from "./styles/Button.styled";
 import { Flex } from "./styles/Flex.styled";
 import CardInfo from "./CardInfo";
-
+import Typical from "react-typical";
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -20,7 +20,19 @@ const Header = () => {
         </Nav>
         <Flex>
           <div>
-            <h1>Build The Community Your Fans Will Love</h1>
+            <h1>
+              <Typical
+                steps={[
+                  "Build The Community Your Fans Will Love",
+                  3000,
+                  "Build Your First online Community!",
+                  2000,
+                ]}
+                loop={Infinity}
+                wrapper="p"
+              />
+            </h1>
+
             <p>
               Huddle re-imagines the way we build communities. You have a voice,
               but so does your audience. Create connections with your users as
