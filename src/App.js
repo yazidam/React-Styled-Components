@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { ThemeProvider } from "styled-components";
-import Card from "./components/Card";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import { Container } from "./components/styles/Container.styled";
-import GlobalStyles from "./components/styles/Global";
-import content from "./content";
 import AOS from "aos";
+import FirstPage from "./FirstPage";
 
 function App() {
   const theme = {
@@ -22,18 +17,11 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyles />
-        <Header />
-        <Container>
-          {content.map((item, index) => (
-            <Card key={index} item={item} />
-          ))}
-        </Container>
-        <Footer />
-      </>
-    </ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FirstPage theme={theme} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

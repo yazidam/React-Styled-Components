@@ -23,9 +23,9 @@ const Header = () => {
             <h1>
               <Typical
                 steps={[
-                  "Build The Community Your Fans Will Love",
+                  "Build Your Community ",
                   3000,
-                  "Build Your First online Community!",
+                  "Build Your First Community !",
                   2000,
                 ]}
                 loop={Infinity}
