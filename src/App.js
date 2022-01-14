@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import FirstPage from "./FirstPage";
 import SecondePage from "./SecondePage";
+import GlobalStyles from "./components/styles/Global";
 
 function App() {
   const theme = {
@@ -18,12 +19,16 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FirstPage theme={theme} />} />
-        <Route path="/seconde" element={<SecondePage theme={theme} />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      {/* <GlobalStyles /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FirstPage theme={theme} />} />
+          <Route path="/seconde" element={<SecondePage theme={theme} />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
