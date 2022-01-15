@@ -14,6 +14,7 @@ function App() {
       footer: "#003333",
     },
     mobile: "768px",
+    LargeScreen: "1280px",
   };
   useEffect(() => {
     AOS.init();
