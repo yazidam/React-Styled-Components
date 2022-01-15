@@ -65,6 +65,10 @@ export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
   /* margin-bottom: 200px; */
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: -150px;
+    margin-left: 40px;
+  }
 `;
 
 export const SidebarRoute = styled(LinkR)`
