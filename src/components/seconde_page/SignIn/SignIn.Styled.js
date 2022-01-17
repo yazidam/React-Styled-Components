@@ -63,8 +63,9 @@ export const Form = styled.form`
   padding: 80px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 768px) {
     padding: 32px 32px;
+    max-width: 210px;
   }
 `;
 
