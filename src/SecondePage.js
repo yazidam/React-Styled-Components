@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
+import Footer from "./components/seconde_page/FooterSection/Footer";
 import Hero from "./components/seconde_page/HeroSection/Hero";
 import {
   homeObjOne,
@@ -28,6 +29,7 @@ const SecondePage = ({ theme }) => {
         <Info {...homeObjTwo} />
         <Service />
         <Info {...homeObjThree} />
+        <Footer />
       </>
     </ThemeProvider>
   );
