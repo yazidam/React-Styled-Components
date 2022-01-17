@@ -5,6 +5,7 @@ import AOS from "aos";
 import FirstPage from "./FirstPage";
 import SecondePage from "./SecondePage";
 import GlobalStyles from "./components/styles/Global";
+import SignIn from "./components/seconde_page/SignIn/SignIn";
 
 function App() {
   const theme = {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<FirstPage theme={theme} />} />
           <Route path="/seconde" element={<SecondePage theme={theme} />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </>
